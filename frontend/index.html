@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koms Shoes - Sneakers à Prix Accessible</title>
+    <meta name="description" content="Découvrez Koms Shoes, votre boutique de sneakers streetwear. Collection tendance à des prix qui respectent votre budget.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo-section">
+                    <div class="logo">KS</div>
+                    <div class="brand">
+                        <h1>Koms Shoes</h1>
+                        <p>Streetwear • Qualité • Prix Accessible</p>
+                    </div>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>+221 77 320 34 84</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-snapchat"></i>
+                        <span>@okomma</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Style Urban à Prix Malin</h2>
+                <p>Découvrez des sneakers tendance avec un excellent rapport qualité-prix. Des modèles qui allient style et accessibilité.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Modèles</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">💸</span>
+                        <span class="stat-label">Prix Doux</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">🚚</span>
+                        <span class="stat-label">Livraison Rapide</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-wallet"></i>
+                    <h3>Prix Compétitifs</h3>
+                    <p>Des tarifs qui préservent votre budget sans compromis sur le style</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-tshirt"></i>
+                    <h3>Style Garanti</h3>
+                    <p>Des modèles actuels qui suivent les dernières tendances streetwear</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Livraison Express</h3>
+                    <p>Recevez votre paire rapidement partout en ville</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Conseils Pro</h3>
+                    <p>Notre équipe vous guide pour faire le bon choix</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalogue Produits -->
+    <section class="catalogue">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre Sélection</h2>
+                <p>Des paires qui allient look incroyable et prix raisonnable</p>
+            </div>
+
+            <!-- Filtres -->
+            <div class="filters-section">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Rechercher une marque, un modèle..." class="search-input">
+                    <button id="btnSearch" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                
+                <div class="filter-grid">
+                    <select id="filterBrand" class="filter-select">
+                        <option value="">Toutes les marques</option>
+                    </select>
+                    <select id="filterColor" class="filter-select">
+                        <option value="">Toutes les couleurs</option>
+                    </select>
+                    <select id="filterSize" class="filter-select">
+                        <option value="">Toutes les tailles</option>
+                    </select>
+                    <select id="sortPrice" class="filter-select">
+                        <option value="">Trier par</option>
+                        <option value="price_asc">Prix croissant</option>
+                        <option value="price_desc">Prix décroissant</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Grille des produits -->
+            <div id="productsGrid" class="products-grid">
+                <!-- Les produits seront chargés ici par JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt à adopter le style ?</h2>
+                <p>Contactez-nous pour découvrir nos offres et trouver la paire parfaite pour vous</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/221773203484" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Discuter sur WhatsApp
+                    </a>
+                    <a href="https://www.snapchat.com/add/okomma" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-snapchat"></i>
+                        Voir nos stories
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">KS</div>
+                    <h3>Koms Shoes</h3>
+                    <p>Votre partenaire style depuis 2024. Des sneakers qui impressionnent sans ruiner.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Rapide</h4>
+                    <div class="contact-links">
+                        <a href="https://wa.me/221773203484" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp: +221 77 320 34 84
+                        </a>
+                        <a href="https://www.snapchat.com/add/okomma" target="_blank">
+                            <i class="fab fa-snapchat"></i>
+                            Snapchat: @okomma
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Nos Engagements</h4>
+                    <ul>
+                        <li>✓ Prix transparents</li>
+                        <li>✓ Style assuré</li>
+                        <li>✓ Livraison rapide</li>
+                        <li>✓ Service personnalisé</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Koms Shoes. Des sneakers qui changent la game, pas le portefeuille.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
