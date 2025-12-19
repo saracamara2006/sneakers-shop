@@ -82,6 +82,13 @@ body {
     margin: 0;
 }
 
+/* NOUVEAU: Conteneur Panier + Contact */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
 .contact-info {
     display: flex;
     gap: 30px;
@@ -101,6 +108,35 @@ body {
 
 .contact-item i {
     font-size: 1.2rem;
+}
+
+/* NOUVEAU: Bouton Panier */
+.cart-btn {
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.cart-btn:hover {
+    color: var(--accent);
+}
+
+.cart-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--secondary);
+    color: white;
+    border-radius: 50%;
+    padding: 2px 7px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    line-height: 1;
 }
 
 /* Hero Section */
@@ -507,6 +543,17 @@ body {
         gap: 20px;
     }
     
+    /* NOUVEAU : Adapter le header mobile */
+    .nav-actions {
+        order: 3; 
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .contact-info {
+        display: none; /* Cacher les contacts dans la nav pour le mobile */
+    }
+    
     .hero-content h2 {
         font-size: 2.5rem;
     }
@@ -551,6 +598,12 @@ body {
     .hero {
         padding: 120px 0 60px;
     }
+
+    /* NOUVEAU : Modale mobile */
+    .modal-content {
+        margin: 50px auto;
+        padding: 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -570,7 +623,7 @@ body {
         flex-direction: column;
     }
 }
-/* === CORRECTION DES FILTRES === */
+/* === CORRECTION DES FILTRES ET NOUVEAUX STYLES PANIER === */
 
 /* Filtres en noir */
 .search-input,
@@ -607,4 +660,108 @@ body {
 
 .search-btn:hover {
   transform: scale(1.05) !important;
+}
+
+/* --- NOUVEAU: Modale Panier --- */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 2000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background: var(--card-bg);
+    margin: 10% auto;
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    box-shadow: var(--shadow);
+}
+
+.close-btn {
+    color: var(--text-muted);
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 15px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px dashed rgba(255,255,255,0.05);
+}
+
+.cart-item-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.item-details h4 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.item-details p {
+    margin: 5px 0 0;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    color: var(--secondary);
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.remove-btn:hover {
+    color: white;
+}
+
+.cart-summary {
+    text-align: right;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+
+.cart-summary p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#checkoutBtn {
+    width: 100%;
+    justify-content: center;
+    padding: 15px 35px;
 }

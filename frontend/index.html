@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="container">
             <nav class="nav">
@@ -22,21 +21,27 @@
                     </div>
                 </div>
                 
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fab fa-whatsapp"></i>
-                        <span>+221 77 320 34 84</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-snapchat"></i>
-                        <span>@okomma</span>
+                <div class="nav-actions">
+                    <button id="cartBtn" class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cartCount" class="cart-count">0</span>
+                    </button>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>+221 77 320 34 84</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-snapchat"></i>
+                            <span>@okomma</span>
+                        </div>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
@@ -60,7 +65,6 @@
         </div>
     </section>
 
-    <!-- Features -->
     <section class="features">
         <div class="container">
             <div class="features-grid">
@@ -88,7 +92,6 @@
         </div>
     </section>
 
-    <!-- Catalogue Produits -->
     <section class="catalogue">
         <div class="container">
             <div class="section-header">
@@ -96,7 +99,6 @@
                 <p>Des paires qui allient look incroyable et prix raisonnable</p>
             </div>
 
-            <!-- Filtres -->
             <div class="filters-section">
                 <div class="search-bar">
                     <input type="text" id="searchInput" placeholder="Rechercher une marque, un modèle..." class="search-input">
@@ -123,14 +125,11 @@
                 </div>
             </div>
 
-            <!-- Grille des produits -->
             <div id="productsGrid" class="products-grid">
-                <!-- Les produits seront chargés ici par JavaScript -->
-            </div>
+                </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
     <section class="cta">
         <div class="container">
             <div class="cta-content">
@@ -150,7 +149,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -191,6 +189,21 @@
         </div>
     </footer>
 
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Votre Panier Koms Shoes</h2>
+            <div id="cartItemsContainer" class="cart-items-container">
+                </div>
+            <div id="cartSummary" class="cart-summary">
+                <p>Total estimé : <span id="cartTotal">0 FCFA</span></p>
+                <button id="checkoutBtn" class="btn btn-primary">
+                    <i class="fab fa-whatsapp"></i>
+                    Confirmer la Commande (WhatsApp)
+                </button>
+            </div>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
